@@ -1,0 +1,11 @@
+primitive True
+primitive False
+type MyBool = True | False
+
+fun fibs(n: Int32): Int32 {
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        return fibs(n - 1) + fibs(n - 2);
+    }
+}
